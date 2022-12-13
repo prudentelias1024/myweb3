@@ -1,0 +1,25 @@
+{
+  "name": "Test",
+  "version": "0.0.1",
+  "description": "This is my first solidity project",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "server": "node server",
+    "buiid": "npx tailwindcss -i ./src/styles.css -o ./src/output.css",
+    "watch": "npx tailwindcss -i ./src/styles.css -o ./src/output.css --watch"
+  },
+  "author": "Elias",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^3.0.0",
+    "lite-server": "^2.6.1",
+    "truffle-contract": "^4.0.31",
+    "web3": "^1.7.3"
+  }
+}
