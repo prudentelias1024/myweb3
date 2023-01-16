@@ -1,6 +1,6 @@
 let Transactions, walletConnected = false;
 const App = {
-  web3,
+   
   loadWeb3 : async() => {
    
     if (window.ethereum) {
@@ -16,7 +16,8 @@ const App = {
 
     },
     loadBlockchainData: async() => {
-      transactions = await (await fetch("../build/contracts/Transactions.json")).json()
+      transactions = await (await fetch("contracts/Transactions.json")).json()
+      alert(transaction)
       const networkId = await web3.eth.net.getId();
       const networkData =   transactions.networks[networkId];
       if (networkData) {

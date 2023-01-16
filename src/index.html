@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xendether</title>
-     <link rel="stylesheet" href="output.css">
      <link rel="stylesheet" href="fontawesome.css">
      <link rel="stylesheet" href="all.css">
     </head>
     <script src="jquery.min.js"></script>
     <script src="web3.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="App.js" defer></script>
-<body onload="App.loadWeb3(), App.loadBlockchainData(), App.getAllTransactions()">
+<body  onload="App.loadWeb3(), App.loadBlockchainData(), App.getAllTransactions()">
  <div class="min-h-screen">
     <div class="gradient-bg-welcome">
         <div class="navbar w-full flex md:justify-center justify-between items-center   p-4">
@@ -20,14 +20,14 @@
                 <!-- logo go here -->
                 </div>
 
-                <ul class="text-white
+                <ul class="text-black
              md:flex hiddent list-none flex-row justify-between items-center flex-initial">
                     <li class="mx-4 cursor-pointer">Market</li>
                     <li class="mx-4 cursor-pointer">Exchange</li>
                     <li class="mx-4 cursor-pointer">Wallets</li>
                     <p  id="account__address"class="text-white font-light text-sm">
                      </p>
-                    <li class="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">Login</li>
+                    <li class="bg-[#2952e3] text-white py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">Login</li>
                 </ul>
                 <!-- <div class="flex relative"> 
                     <ul class="z-10 fixed top-0 -right-2 p-3 w-[70vw] h-screen sow-2xl md:hidden list-none flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in">
@@ -43,10 +43,10 @@
         <div class="flex w-full justify-center items-center">
                 <div class="flex md:flex-row flex-col items-start justify-between md:p-10 mt-10 py-12 px-4">
                     <div class="flex flex-1 justify-start  flex-col  md:mr-10">
-                        <h1 class="text-3xl sm:text-5xl text-white text-gradient py-1">
+                        <h1 class="text-3xl sm:text-5xl text-black text-gradient py-1">
                             Send Eth <br> around the world
                         </h1>
-                        <p class="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">Explore the crypto world. <br> Buy and Sell Cryptocurrency on Brypto Network</p>
+                        <p class="text-left mt-5 text-black font-light md:w-9/12 w-11/12 text-base">Explore the crypto world. <br> Buy and Sell Cryptocurrency on Brypto Network</p>
                         <button id="connect__wallet" class="flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]" onclick="App.connectWallet(), App.getBalance()">
                             <p class="text-white text-base font-semi-bold">
                        Connect Wallet
@@ -85,7 +85,7 @@
                             <input id="eth__amount" step="0.0001" class="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism" placeholder="Enter Eth Amount" name="amount"/>
                             <input  id="eth__message"step="0.0001"class="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism" placeholder="Enter Reason" name="message"/>
                            
-                                <button onclick="App.sendEth()" class="text-white w-full mt-2 mb-4 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer" type="button">
+                                <button onclick="App.sendEth()" class="bg-[#2952e3] text-white w-full mt-2 mb-4 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer" type="button">
                                     Send Now
                                 </button>
                             
@@ -93,7 +93,7 @@
                     </div>
                
             </div>
-        </div>vg
+        </div>
         
     
 
@@ -102,8 +102,8 @@
 
 <div class=" flex w-full justify-center items-center 2xl:px-20 gradient-bg-transactions">
     <div class=" flex flex-col md:p-12 py-12 px-4">
-        <h3 class="text-white text-3xl text-center my-2">Latest Transactions</h3>
-        <!-- <h3 class="text-white text-3xl text-center my-2">Connect Your Account To See Latest Transactions</h3> -->
+        <h3 class="text-black text-3xl text-center my-2">Latest Transactions</h3>
+        <h3 class="text-black text-md text-center my-2">Connect Your Account To See Latest Transactions</h3>
       <div id="transactions" class=" flex flex-wrap justify-center items-center mt-10">
            <div id="child" class="bg-[#181918] m-4 flex flex-1 
             2xl-min-w-[450px]
